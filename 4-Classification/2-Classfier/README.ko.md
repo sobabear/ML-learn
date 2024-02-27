@@ -4,7 +4,6 @@
 
 다양한 classifiers와 데이터셋을 사용해서 _재료 그룹 기반으로 주어진 국민 요리를 예측_ 합니다. 이러는 동안, classification 작업에 알고리즘을 활용할 몇 방식에 대해 자세히 배워볼 예정입니다.
 
-## [강의 전 퀴즈](https://gray-sand-07a10f403.1.azurestaticapps.net/quiz/21/)
 
 ## 준비하기
 
