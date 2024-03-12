@@ -1,22 +1,13 @@
-import matplotlib.pyplot as plt
-import numpy as np
-from sklearn import datasets, linear_model, model_selection
+def solution(angle):
+    answer = 0
 
-X, y = datasets.load_diabetes(return_X_y=True)
-print(X.shape)
-print(X[0])
-
-X = X[:, np.newaxis, 2]
-X_train, X_test, y_train, y_test = model_selection.train_test_split(X, y, test_size=0.33)
-
-model = linear_model.LinearRegression()
-model.fit(X_train, y_train)
-
-y_pred = model.predict(X_test)
-
-plt.scatter(X_test, y_test,  color='black')
-plt.plot(X_test, y_pred, color='blue', linewidth=3)
-plt.xlabel('Scaled BMIs')
-plt.ylabel('Disease Progression')
-plt.title('A Graph Plot Showing Diabetes Progression Against BMI')
-plt.show()
+    # or  and
+    if angle > 0 and angle < 90:
+        answer = 1
+    elif angle == 90:
+        answer = 2
+    elif angle > 90 and angle < 180:
+        answer = 3
+    else:
+        answer = 4
+    return answer
